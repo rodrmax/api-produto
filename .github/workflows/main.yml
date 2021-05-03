@@ -66,14 +66,14 @@ jobs:
       - name: MongoDB
         uses: Azure/k8s-deploy@v1.3
         with:
-          manifests: 
-            kubernets/banco/deployment.yaml
+          manifests: |
+            kubernets/banco/deployment.yaml 
             kubernets/banco/service.yaml
             
       - name: WebAPI
         uses: Azure/k8s-deploy@v1.3
         with:
-          manifests: 
+          manifests: |
             kubernets/sistema/deployment.yaml
 
             
