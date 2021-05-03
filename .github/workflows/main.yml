@@ -29,11 +29,10 @@ jobs:
         uses: docker/login-action@v1.9.0
         with:
         # Server address of Docker registry. If not set then will default to Docker Hub
-
-        username: ${{secrets.DOCKERHUB_USER}}
-        # Password or personal access token used to log against the Docker registry
-        password: ${{secrets.DOCKERHUB_PWD}}
-        # Log out from the Docker registry at the end of a job
+          username: ${{secrets.DOCKERHUB_USER}}
+          # Password or personal access token used to log against the Docker registry
+          password: ${{secrets.DOCKERHUB_PWD}}
+          # Log out from the Docker registry at the end of a job
 
 
       - name: Build and push Docker images
