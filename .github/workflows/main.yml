@@ -67,14 +67,14 @@ jobs:
         uses: Azure/k8s-deploy@v1.3
         with:
           manifests: 
-            kubernets/banco/deployment.yaml
-            kubernets/banco/service.yaml
+            ./kubernets/banco/deployment.yaml
+            ./kubernets/banco/service.yaml
             
       - name: WebAPI
         uses: Azure/k8s-deploy@v1.3
         with:
           manifests: 
-            kubernets/sistema/deployment.yaml
+            ./kubernets/sistema/deployment.yaml
 
             
             
